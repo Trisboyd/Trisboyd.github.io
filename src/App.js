@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Hero from './components/hero/hero';
+import ProjPopup from './components/projPopup/projPopup';
+import What from './components/what/what';
+import Who from './components/who/who';
 
 function App() {
+
+  // _________________________________________POPUPS
+
+  const [open, setOpen] = useState(false);
+
+  const openProjPopup = () => {
+    setOpen(true);
+  }
+
+  const closePopups = () => {
+    setOpen(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Hero />
+      <Who />
+      <What openPopup={openProjPopup} />
+      <ProjPopup
+        open={open}
+        close={closePopups} />
+    </>
+  )
 }
 
 export default App;
