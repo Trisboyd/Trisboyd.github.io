@@ -1,5 +1,5 @@
 import { Pic, WhoInfo, WhoSection, WhoText, SectionTitle } from "./styledWho";
-import pic from '../../images/hatPic.jpg';
+import pic from '../../constants/who/hatPic.jpg';
 import Slide from 'react-reveal/Slide';
 
 const Who = () => {

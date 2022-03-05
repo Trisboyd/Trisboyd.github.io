@@ -14,10 +14,10 @@ const VibeNav = () => {
                 <Link>What</Link>
             </VibeBar>
             <VibeBar>
-                <Link>Why</Link>
+                <Link>How</Link>
             </VibeBar>
             <VibeBar>
-                <Link>How</Link>
+                <Link>Contact</Link>
             </VibeBar>
         </Vibe>
     )

@@ -1,15 +1,13 @@
 import { WhatBlock, WhatGrid, WhatSection } from './styledWhat';
-import around from '../../images/aroundUs.png';
-import newsSearch from '../../images/newsSearch.png';
-import newCrob from '../../images/NewCrobuzonMap.png';
 import { SectionTitle } from '../who/styledWho';
 import WhatBlockHover from '../whatBlock/whatBlockHover';
 import Fade from 'react-reveal/Fade';
+import { NewsData, NewCrobData, AroundData } from '../../constants/what/what';
 
 const What = (props) => {
 
-    const openPopup = () => {
-        props.openPopup();
+    const handlePopupClick = (data) => {
+        props.handlePopupClick(data);
     }
 
     return (
@@ -18,31 +16,28 @@ const What = (props) => {
             <Fade>
                 <WhatGrid>
                     <WhatBlock
-                        pic={around}
+                        pic={AroundData.images[0]}
                         rStart={2}
                         cStart={1}>
                         <WhatBlockHover
-                            title={'Around the US'}
-                            stack={'React | Node.js'}
-                            openPopup={openPopup} />
+                            data={AroundData}
+                            handlePopupClick={handlePopupClick} />
                     </WhatBlock>
                     <WhatBlock
-                        pic={newsSearch}
+                        pic={NewsData.images[0]}
                         rStart={1}
                         cStart={2}>
                         <WhatBlockHover
-                            title={'News Explorer'}
-                            stack={'React | Node.js'}
-                            openPopup={openPopup} />
+                            data={NewsData}
+                            handlePopupClick={handlePopupClick} />
                     </WhatBlock>
                     <WhatBlock
-                        pic={newCrob}
+                        pic={NewCrobData.images[0]}
                         rStart={2}
                         cStart={3}>
                         <WhatBlockHover
-                            title={'New Crobuzon'}
-                            stack={'React'}
-                            openPopup={openPopup} />
+                            data={NewCrobData}
+                            handlePopupClick={handlePopupClick} />
                     </WhatBlock>
                 </WhatGrid>
             </Fade>

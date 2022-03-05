@@ -2,20 +2,22 @@ import { WhatBlockInfo, WhatTitle, WhatStack, WhatButton } from "./styledWhatBlo
 
 const WhatBlockHover = (props) => {
 
-    const openPopup = () => {
-        props.openPopup();
+    const handlePopupClick = () => {
+        props.handlePopupClick(props.data);
     }
+
+    const { title, stack } = props.data;
 
     return (
         <WhatBlockInfo>
             <WhatTitle>
-                {props.title}
+                {title}
             </WhatTitle>
             <WhatStack>
-                {props.stack}
+                {stack}
             </WhatStack>
             <WhatButton
-                onClick={openPopup}>
+                onClick={handlePopupClick}>
                 Learn More
             </WhatButton>
         </WhatBlockInfo>

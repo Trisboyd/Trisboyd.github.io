@@ -18,7 +18,7 @@ export const Overlay = styled.section`
 `
 export const PopupContainer = styled.div`
     width: 50vw;
-    height: 500px;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,10 +28,10 @@ export const PopupContainer = styled.div`
     `
 export const PopupExit = styled.button`
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -25px;
-    right: -25px;
+    width: 30px;
+    height: 30px;
+    top: -35px;
+    right: -35px;
     cursor: pointer;
     background-image: url(${exit});
     background-color: rgba(0, 0, 0, 0);
@@ -43,7 +43,15 @@ export const PopupExit = styled.button`
 export const PopupImgContainer = styled.div`
     position: relative;
     width: 100%;
-    background-image = url(${props => props.image});
+    height: 50%;
+    background-image: url(${props => props.image});
+    background-size: cover;
+    background-position: center;
+`
+export const PopupImg = styled.img`
+    width: 150%;
+    height: 35vh;
+    margin: 0;
 `
 export const PopupText = styled.div`
     display: flex;
