@@ -18,14 +18,17 @@ export const Overlay = styled.section`
 `
 export const PopupContainer = styled.div`
     width: 50vw;
-    height: 65vh;
+    max-width: 600px;
+    max-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 2;
     position: relative;
     background: white;
-    `
+    padding-bottom: 20px;
+    border-radius: 20px;
+`
 export const PopupExit = styled.button`
     position: absolute;
     width: 30px;
@@ -42,16 +45,16 @@ export const PopupExit = styled.button`
     `
 export const PopupImgContainer = styled.div`
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 50%;
     background-image: url(${props => props.image});
     background-size: cover;
     background-position: center;
 `
 export const PopupImg = styled.img`
-    width: 150%;
-    height: 35vh;
+    width: 100%;
     margin: 0;
+    align-self: center;
 `
 export const PopupText = styled.div`
     display: flex;

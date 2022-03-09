@@ -11,7 +11,7 @@ export const WhatGrid = styled.div`
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 450px));
-    grid-template-rows: repeat(auto-fit, minmax(250px, 400px));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
     grid-row-gap: 15px;
     grid-column-gap: 15px;
     `
@@ -22,6 +22,7 @@ export const WhatBlock = styled.div`
     grid-row-start: ${props => props.rStart};
     grid-column-start: ${props => props.cStart};
     position: relative;
+    border-radius: 20px;
     transition: visibility .3s ease-in-out;
 
     :hover {

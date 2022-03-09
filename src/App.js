@@ -24,7 +24,6 @@ function App() {
   }
 
   const handlePopupClick = (data) => {
-    console.log(data);
     setProject(data);
     openProjPopup();
   }

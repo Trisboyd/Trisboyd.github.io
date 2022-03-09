@@ -12,9 +12,9 @@ export const NewCrobData = {
     title: 'Explore New Crobuzon',
     about: 'Fascinated by the fantasy/steampunk world of China Mieville, I created an interactive site to explore the city and races of New Crobuzon.',
     images: [
+        newCrob,
         newCrobP,
-        newCrobR,
-        newCrob
+        newCrobR
     ],
     stack: 'React',
     site: 'https://trisboyd.github.io/new-crobuzon-app/',

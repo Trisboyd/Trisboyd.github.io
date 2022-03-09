@@ -1,6 +1,7 @@
 import { Pic, WhoInfo, WhoSection, WhoText, SectionTitle } from "./styledWho";
 import pic from '../../constants/who/hatPic.jpg';
 import Slide from 'react-reveal/Slide';
+import { bio, bio2 } from '../../constants/who/who';
 
 const Who = () => {
 
@@ -9,11 +10,11 @@ const Who = () => {
             <Slide left>
                 <WhoText>
                     <SectionTitle>Who?</SectionTitle>
-                    <WhoInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum
-                        eu facilisis sed odio morbi quis commodo. Morbi tristique senectus et
-                        netus et. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque
-                        mauris. Facilisis sed odio morbi quis commodo.
+                    <WhoInfo>
+                        {bio}
+                    </WhoInfo>
+                    <WhoInfo>
+                        {bio2}
                     </WhoInfo>
                 </WhoText>
             </Slide>
