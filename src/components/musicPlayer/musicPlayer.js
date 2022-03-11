@@ -1,18 +1,32 @@
-import { PlayButton, Player, PlayerSpan, PlayerTitle, PlayStation, PlaySym } from "./styledMusicPlayer";
+import { PlayButton, Player, PlayerTitle, PlayStation, PlaySym, Subtitle } from "./styledMusicPlayer";
 import playButton from '../../images/playSym.png';
 import pauseButton from '../../images/pauseSym.png';
+import { useState } from 'react';
 
-const MusicPlayer = () => {
+const MusicPlayer = (props) => {
+
+    const [playing, setPlaying] = useState(false);
+
+    const playTune = () => {
+        props.playTune();
+        setPlaying(!playing);
+    }
+
+    const pauseTune = () => {
+        props.pauseTune();
+        setPlaying(!playing);
+    }
 
     return (
         <Player>
-            <PlayerTitle>Now Playing:<br /><PlayerSpan>Hire Me</PlayerSpan></PlayerTitle>
+            <PlayerTitle>
+                Piraeus
+            </PlayerTitle>
+            <Subtitle>by Tristan Boyd</Subtitle>
             <PlayStation>
-                <PlayButton>
-                    <PlaySym src={playButton} />
-                </PlayButton>
-                <PlayButton>
-                    <PlaySym src={pauseButton} />
+                <PlayButton
+                    onClick={playing ? pauseTune : playTune}>
+                    <PlaySym src={playing ? pauseButton : playButton} />
                 </PlayButton>
             </PlayStation>
         </Player>

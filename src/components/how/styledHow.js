@@ -12,5 +12,4 @@ export const HowGrid = styled.div`
     margin: auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    margin: auto;
 `

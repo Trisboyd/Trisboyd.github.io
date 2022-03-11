@@ -10,15 +10,20 @@ export const WhatBlockInfo = styled.div`
     display: flex;
     flex-direction: column;
     background: white;
+    border-radius: 20px;
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 
     ${WhatBlock}:hover & {
         visibility: visible;
+        opacity: 1;
     }
 `
 export const WhatTitle = styled.h4`
     font-size: 30px;
     text-align: center;
+    margin: 15% 0;
 `
 export const WhatStack = styled.p`
     font-size: 20px;

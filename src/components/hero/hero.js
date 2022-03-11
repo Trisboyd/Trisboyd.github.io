@@ -1,13 +1,11 @@
 import React from 'react';
 import { HeroSection, Job, Name, Profile, ProfileText } from './styledHero';
 import Header from '../header/header';
-import MusicPlayer from '../musicPlayer/musicPlayer';
 
 const Hero = () => {
 
     return (
         <HeroSection>
-            <MusicPlayer />
             <Header />
             <Profile>
                 <ProfileText>

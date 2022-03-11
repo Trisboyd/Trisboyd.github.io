@@ -1,26 +1,32 @@
 import styled from "styled-components";
 
 export const Player = styled.div`
-    width: 30%;
-    height: 15%;
+    width: 15%;
+    height: 14%;
     border: solid 1px white;
     background-color: rgba(7, 99, 247, 0.4);
-    position: absolute;
+    position: fixed;
+    z-index: 3;
     top: 5px;
     right: 5px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 `
 export const PlayerTitle = styled.p`
     font-size: 20px;
+    font-style: italic;
     text-align: center;
-    color: white;
+    color: yellow;
     margin: 0;
 `
-export const PlayerSpan = styled.span`
+export const Subtitle = styled.p`
+    font-size: 16px;
     font-style: italic;
-    color: yellow;
+    text-align: center;
+    margin: 0;
+    color: white;
 `
 export const PlayStation = styled.div`
     display: flex;
@@ -34,6 +40,12 @@ export const PlayButton = styled.button`
     background: inherit;
     border: none;
     cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+
+    :hover {
+        opacity: 0.7;
+    }
 `
 export const PlaySym = styled.img`
     width: 100%;
