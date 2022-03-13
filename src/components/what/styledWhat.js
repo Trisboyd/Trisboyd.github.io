@@ -1,19 +1,25 @@
 import styled from 'styled-components';
 
 export const WhatSection = styled.section`
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background: linear-gradient( rgb(0, 0, 149), rgb(0, 0, 0));
     margin: auto;
 `
 export const WhatGrid = styled.div`
+    width: 85%;
     margin: 50px auto;
     min-height: 500px;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 450px));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     grid-row-gap: 15px;
     grid-column-gap: 15px;
+
+    @media (max-width: 525px) {
+        display: flex;
+        flex-direction: column;
+    }
     `
 export const WhatBlock = styled.div`
     background-image: url(${props => props.pic});
@@ -24,6 +30,7 @@ export const WhatBlock = styled.div`
     position: relative;
     border-radius: 20px;
     transition: visibility .3s ease-in-out;
+    opacity: ${props => props.$real ? 1 : 0};
 
     :hover {
         visibility: hidden;
@@ -35,6 +42,14 @@ export const WhatBlock = styled.div`
         bottom: 0;
         left: 0;
         right: 0;
+    }
 
+    @media (max-width: 525px) {
+        height: 350px;
+        display: ${props => props.$real ? 'block' : 'none'};
+    }
+
+    @media (max-width: 325px) {
+        height: 200px;
     }
 `

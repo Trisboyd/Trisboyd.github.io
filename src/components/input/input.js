@@ -4,14 +4,7 @@ const Input = (props) => {
 
     return (
         <>
-            <InputContainer
-                columnStart={props.columnStart}
-                columnEnd={props.columnEnd}
-                rowStart={props.rowStart}
-                rowEnd={props.rowEnd}
-                marginL={props.marginL}
-                marginR={props.marginR}
-            >
+            <InputContainer>
                 <InputLabel>
                     {props.label}
                 </InputLabel>

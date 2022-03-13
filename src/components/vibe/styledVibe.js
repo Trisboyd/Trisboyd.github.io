@@ -1,62 +1,6 @@
 import styled from 'styled-components';
-import { keyframes } from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 import { glow1, glow2, glow3, glow4, glow5 } from '../../constants/vibeAnimation';
-
-// const glow1 = keyframes`
-//     0.2% {
-//         border: 4px solid white;
-//     }
-//     3% {
-//         border: 3.5px solid white;
-//     }
-//     4% {
-//         border: 3px solid gray;
-//     }
-//     5% {
-//         border: 2px solid gray;
-//     }
-//     6% {
-//         border: 1px solid gray;
-//     }
-//     7% {
-//         border: none;
-//     }
-//     50% {
-//         border: 4px solid white;
-//     }
-//     60% {
-//         border: none;
-//     }
-// `
-// const glow3 = keyframes`
-//     25% {
-//         border: 4px solid white;
-//     }
-//     35% {
-//         border: none;
-//     }
-// `
-// const glow2 = keyframes`
-// 13% {
-//     border: 4px solid white;
-// }
-// 15.4% {
-//     border: 3.5px solid white;
-// }
-// 16.4% {
-//     border: 3px solid white;
-// }
-// 17.4% {
-//     border: 2.5px solid gray;
-// }
-// 18.4% {
-//     border: 1px solid gray;
-// }
-// 19.4% {
-//     border: none;
-// }
-// `
 
 export const Vibe = styled.nav`
     height: 100%;
@@ -96,10 +40,18 @@ export const VibeBar = styled.div`
         animation: ${glow5} 16s linear infinite;
     }
 
+    @media (max-width: 769px) {
+        width: 20vw;
+    }
+
 `
 export const Link = styled(LinkS)`
     color: #c0edfd;
     color: #f6f665;
     margin-bottom: 10%;
     font-size: 22px;
+
+    @media (max-width: 525px) {
+        font-size: 14px;
+    }
 `

@@ -13,6 +13,10 @@ export const Player = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media (max-width: 400px) {
+        width: 20%;
+    }
 `
 export const PlayerTitle = styled.p`
     font-size: 20px;
@@ -20,6 +24,10 @@ export const PlayerTitle = styled.p`
     text-align: center;
     color: yellow;
     margin: 0;
+
+    @media (max-width: 769px) {
+        font-size: 16px;
+    }
 `
 export const Subtitle = styled.p`
     font-size: 16px;
@@ -27,6 +35,10 @@ export const Subtitle = styled.p`
     text-align: center;
     margin: 0;
     color: white;
+
+    @media (max-width: 769px) {
+        font-size: 12px;
+    }
 `
 export const PlayStation = styled.div`
     display: flex;
@@ -45,6 +57,11 @@ export const PlayButton = styled.button`
 
     :hover {
         opacity: 0.7;
+    }
+
+    @media (max-width: 769px) {
+        width: 40px;
+        height: 30px;
     }
 `
 export const PlaySym = styled.img`

@@ -29,12 +29,12 @@ const ProjPopup = (props) => {
                         <PopupInfo>{props.project.about}</PopupInfo>
                         <PopupButtonContainer>
                             <PopupLink href={props.project.site} target={'_blank'}>
-                                <WhatButton>
+                                <WhatButton $popup={true}>
                                     Visit Site
                                 </WhatButton>
                             </PopupLink>
                             <PopupLink href={props.project.code} target={'_blank'}>
-                                <WhatButton>
+                                <WhatButton $popup={true}>
                                     Visit Code
                                 </WhatButton>
                             </PopupLink>

@@ -15,6 +15,8 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
+    max-width: 1440px;
+    margin: auto;
   }
 
   body {

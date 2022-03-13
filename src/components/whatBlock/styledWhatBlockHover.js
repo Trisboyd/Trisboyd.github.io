@@ -23,17 +23,33 @@ export const WhatBlockInfo = styled.div`
 export const WhatTitle = styled.h4`
     font-size: 30px;
     text-align: center;
-    margin: 15% 0;
+    margin: 8% 0;
+
+    @media (max-width: 769px) {
+        font-size: 22px;
+    } 
+
+    @media (max-width: 525px) {
+        font-size: 30px;
+    }
 `
 export const WhatStack = styled.p`
     font-size: 20px;
     color: red;
     text-align: center;
+
+    @media (max-width: 769px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 525px) {
+        font-size: 24px;
+    }
 `
 export const WhatButton = styled.button`
     font-size: 24px;
     line-height: 1.3;
-    width: 150px;
+    max-width: 90%;
     margin: auto;
     background: inherit;
     border: solid 1px blue;
@@ -43,5 +59,18 @@ export const WhatButton = styled.button`
     :hover {
         background: #000095;
         color: white;
+        border-radius: 15px;
+    }
+
+    @media (max-width: 769px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 525px) {
+        font-size: ${props => props.$popup ? '18px' : '28px'};
+    }
+
+    @media (max-width: 400px) {
+        font-size: ${props => props.$popup ? '14px' : '28px'};
     }
 `

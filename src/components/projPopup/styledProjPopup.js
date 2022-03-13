@@ -26,15 +26,19 @@ export const PopupContainer = styled.div`
     z-index: 2;
     position: relative;
     background: white;
-    padding-bottom: 20px;
+    padding: 15px 10px;
     border-radius: 20px;
+
+    @media (max-width: 525px) {
+        width: 80vw;
+    }
 `
 export const PopupExit = styled.button`
     position: absolute;
     width: 30px;
     height: 30px;
     top: -35px;
-    right: -35px;
+    left: -35px;
     cursor: pointer;
     background-image: url(${exit});
     background-color: rgba(0, 0, 0, 0);
@@ -60,20 +64,30 @@ export const PopupText = styled.div`
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: auto;
+    margin: 10% auto 0 auto;
 `
 export const PopupTitle = styled.h4`
     font-size: 30px;
     border-bottom: solid 1px gray;
+    margin-bottom: 10px;
+
+    @media (max-width: 769px) {
+        font-size: 24px;
+    }
 `
 export const PopupInfo = styled.p`
     font-size: 18px;
     margin-bottom: 50px;
+
+    @media (max-width: 769px) {
+        font-size: 14px;
+    }
 `
 export const PopupButtonContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 `
 export const PopupLink = styled.a`
     background: inherit;

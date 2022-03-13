@@ -11,6 +11,11 @@ export const LangContainer = styled.div`
 export const LangPic = styled.img`
     width: 75px;
     height: 75px;
+
+    @media (max-width: 525px) {
+        width: 40px;
+        height: 40px;
+    }
 `
 export const LangText = styled.p`
     font-size: 24px;
@@ -19,4 +24,9 @@ export const LangText = styled.p`
     opacity: ${props => props.$active ? '1' : '0'};
     color: white;
     transition: opacity .2s ease-in-out;
+
+    @media (max-width: 525px) {
+        font-size: 14px;
+        opacity: 1;
+    }
 `

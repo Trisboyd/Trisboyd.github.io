@@ -41,10 +41,6 @@ const Contact = () => {
         })
     };
 
-    const handleSubmit = (event) => {
-
-    }
-
     useEffect(() => {
         resetInputs();
     }, []);
@@ -58,10 +54,6 @@ const Contact = () => {
                 <Input
                     input={true}
                     type='text'
-                    columnStart={'1'}
-                    columnEnd={'3'}
-                    rowStart={'2'}
-                    rowEnd={'3'}
                     label={'Name'}
                     name={'name'}
                     placeholder={'name'}
@@ -71,37 +63,14 @@ const Contact = () => {
                 <Input
                     input={true}
                     type='email'
-                    columnStart={'1'}
-                    columnEnd={'2'}
-                    rowStart={'3'}
-                    rowEnd={'4'}
                     label={'Email'}
                     placeholder={'email'}
-                    marginL={true}
                     name={'email'}
                     value={inputs.email}
                     onChange={handleChange}
                 />
                 <Input
-                    input={true}
                     type='text'
-                    columnStart={'2'}
-                    columnEnd={'3'}
-                    rowStart={'3'}
-                    rowEnd={'4'}
-                    label={'Phone'}
-                    placeholder={'phone'}
-                    marginR={true}
-                    name={'phone'}
-                    value={inputs.phone}
-                    onChange={handleChange}
-                />
-                <Input
-                    type='text'
-                    columnStart={'1'}
-                    columnEnd={'3'}
-                    rowStart={'4'}
-                    rowEnd={'8'}
                     label={'Message'}
                     height={'80px'}
                     name={'message'}

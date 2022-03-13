@@ -15,21 +15,32 @@ export const HeroSection = styled.section`
 `
 export const Profile = styled.div`
     margin-right: 5%;
+
+    @media (max-width: 769px) {
+        margin: 0;
+    }
 `
 export const ProfileText = styled.div`
     display: flex;
     flex-direction: column;
-    // margin: 0 5% 0 50%;
 `
 export const Name = styled.h1`
     text-align: center;
     font-size: 68px;
     color: white;
     margin: 0;
+
+    @media (max-width: 769px) {
+        font-size: 48px;
+    }
 `
 export const Job = styled.p`
     text-align: center;
     font-size: 35px;
     color: white;
     margin: 0;
+
+    @media (max-width: 769px) {
+        font-size: 24px;
+    }
 `
