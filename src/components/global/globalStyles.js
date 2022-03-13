@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     max-width: 1440px;
     margin: auto;
+    scroll-behavior: smooth;
   }
 
   body {

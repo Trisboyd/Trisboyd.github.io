@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
 import { glow1, glow2, glow3, glow4, glow5 } from '../../constants/vibeAnimation';
 
 export const Vibe = styled.nav`
@@ -8,7 +7,7 @@ export const Vibe = styled.nav`
     flex-direction: column;
     justify-content: space-between;
 `
-export const VibeBar = styled.div`
+export const VibeBar = styled.a`
     width: 15vw;
     height: 12%;
     box-sizing: border-box;
@@ -45,7 +44,7 @@ export const VibeBar = styled.div`
     }
 
 `
-export const Link = styled(LinkS)`
+export const Link = styled.p`
     color: #c0edfd;
     color: #f6f665;
     margin-bottom: 10%;

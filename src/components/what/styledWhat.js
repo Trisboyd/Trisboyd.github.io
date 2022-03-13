@@ -12,7 +12,7 @@ export const WhatGrid = styled.div`
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 350px));
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 
@@ -25,8 +25,6 @@ export const WhatBlock = styled.div`
     background-image: url(${props => props.pic});
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    grid-row-start: ${props => props.rStart};
-    grid-column-start: ${props => props.cStart};
     position: relative;
     border-radius: 20px;
     transition: visibility .3s ease-in-out;

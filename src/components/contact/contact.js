@@ -47,7 +47,7 @@ const Contact = () => {
 
 
     return (
-        <ContactSection>
+        <ContactSection id='contact'>
             <ContactPic src={pisa} />
             <ContactForm>
                 <ContactTitle>Contact Me</ContactTitle>

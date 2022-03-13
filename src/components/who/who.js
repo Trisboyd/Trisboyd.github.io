@@ -6,7 +6,7 @@ import { bio, bio2 } from '../../constants/who/who';
 const Who = () => {
 
     return (
-        <WhoSection>
+        <WhoSection id='who'>
             <Slide left>
                 <WhoText>
                     <SectionTitle>Who?</SectionTitle>

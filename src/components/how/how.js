@@ -7,7 +7,7 @@ import Language from "../language/language";
 const How = () => {
 
     return (
-        <HowSection>
+        <HowSection id='how'>
             <SectionTitle>
                 How?
             </SectionTitle>

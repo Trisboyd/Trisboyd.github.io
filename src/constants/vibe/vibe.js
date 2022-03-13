@@ -1,17 +1,22 @@
 export const VibeData = [
     {
-        name: 'Home'
+        name: 'Home',
+        link: '#home'
     },
     {
-        name: 'Who'
+        name: 'Who',
+        link: '#who'
     },
     {
-        name: 'What'
+        name: 'What',
+        link: '#what'
     },
     {
-        name: 'How'
+        name: 'How',
+        link: '#how'
     },
     {
-        name: 'Contact'
+        name: 'Contact',
+        link: '#contact'
     }
 ]

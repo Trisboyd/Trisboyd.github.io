@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const WhoSection = styled.section`
     display: flex;
-    padding: 50px 0;
+    padding: 100px 0;
     width: 85%;
     margin: 0 auto;
     align-items: center;

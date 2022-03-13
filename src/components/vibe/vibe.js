@@ -7,7 +7,7 @@ const VibeNav = () => {
         <Vibe>
             {VibeData.map((data) => {
                 return (
-                    <VibeBar>
+                    <VibeBar href={data.link}>
                         <Link>{data.name}</Link>
                     </VibeBar>
                 )

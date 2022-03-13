@@ -11,7 +11,7 @@ const What = (props) => {
     }
 
     return (
-        <WhatSection>
+        <WhatSection id='what'>
             <SectionTitle>What?</SectionTitle>
             <Fade>
                 <WhatGrid>

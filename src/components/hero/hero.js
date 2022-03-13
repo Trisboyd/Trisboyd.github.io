@@ -5,7 +5,7 @@ import Header from '../header/header';
 const Hero = () => {
 
     return (
-        <HeroSection>
+        <HeroSection id='home'>
             <Header />
             <Profile>
                 <ProfileText>
