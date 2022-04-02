@@ -1,4 +1,4 @@
-# jWelcome to my Home Page
+# Welcome to my Home Page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

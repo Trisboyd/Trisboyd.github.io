@@ -11,14 +11,23 @@ export const WhatGrid = styled.div`
     min-height: 500px;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 350px));
+    grid-template-columns: repeat(3, minmax(150px, 350px));
+    grid-template-rows: repeat(2, minmax(150px, 300px));
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 
-    @media (max-width: 525px) {
+    @media (max-width: 1024px) {
+        width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        width: 60%;
         display: flex;
         flex-direction: column;
+    }
+
+    @media (max-width: 525px) {
+        width: 75%;
     }
     `
 export const WhatBlock = styled.div`
@@ -42,12 +51,12 @@ export const WhatBlock = styled.div`
         right: 0;
     }
 
-    @media (max-width: 525px) {
+    @media (max-width: 768px) {
         height: 350px;
         display: ${props => props.$real ? 'block' : 'none'};
     }
 
-    @media (max-width: 325px) {
+    @media (max-width: 375px) {
         height: 200px;
     }
 `

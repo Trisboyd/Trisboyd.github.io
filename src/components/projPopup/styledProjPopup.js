@@ -19,7 +19,7 @@ export const Overlay = styled.section`
 export const PopupContainer = styled.div`
     width: 50vw;
     max-width: 600px;
-    max-height: 800px;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@ export const PopupExit = styled.button`
     position: absolute;
     width: 30px;
     height: 30px;
-    top: -35px;
+    top: 10px;
     left: -35px;
     cursor: pointer;
     background-image: url(${exit});

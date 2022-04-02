@@ -68,7 +68,6 @@ function App() {
           project={project}
           open={open}
           close={handleClosePopup} />}
-
     </>
   )
 }
