@@ -3,10 +3,16 @@ import newCrobR from './NewCrobRace.png';
 import newCrob from './NewCrobuzonMap.png'
 
 import aroundHome from './aroundUs.png';
+import aroundLogin from './around-login.png';
+import aroundAdd from './around-add.png';
 
 import newsHome from './newsHomeP.png';
 import newsSearch from './newsSearch.png';
 import newsSaved from './newsSaved.png';
+
+import cryptoMain from './crypto-main.png';
+import cryptoGraph from './crypto-graph.png';
+
 
 export const NewCrobData = {
     title: 'Explore New Crobuzon',
@@ -38,9 +44,23 @@ export const AroundData = {
     title: 'Around the US',
     about: 'Like Instagram, save photos of locations and interact with other users posts in an interactive web community.',
     images: [
-        aroundHome
+        aroundHome,
+        aroundLogin,
+        aroundAdd
     ],
     stack: 'React | Node.js',
     site: 'https://trisboyd.github.io/react-around-auth/#/signup',
     code: 'https://github.com/Trisboyd/react-around-auth'
+}
+
+export const CryptoData = {
+    title: 'Crypto Watch',
+    about: 'Collects current market information on top cryptocurrencies and present in table and graph formats.',
+    images: [
+        cryptoMain,
+        cryptoGraph
+    ],
+    stack: 'React | Styled-Components',
+    site: 'https://trisboyd.github.io/coin-mock/',
+    code: 'https://github.com/Trisboyd/coin-mock'
 }

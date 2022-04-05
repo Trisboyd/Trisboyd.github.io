@@ -12,7 +12,7 @@ export const WhatGrid = styled.div`
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 350px));
-    grid-template-rows: repeat(2, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(150px, 300px));
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 
