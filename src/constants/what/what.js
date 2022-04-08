@@ -55,7 +55,7 @@ export const AroundData = {
 
 export const CryptoData = {
     title: 'Crypto Watch',
-    about: 'Collects current market information on top cryptocurrencies and present in table and graph formats.',
+    about: 'Collects current market information on top cryptocurrencies and presents the information in accessible formats.',
     images: [
         cryptoMain,
         cryptoGraph

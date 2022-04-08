@@ -49,7 +49,7 @@ export const ContactSubmit = styled.button`
     margin: 20px auto 50px;
     width: 50%;
     height: 50px;
-    background: rgb(0, 0, 149);
+    background: ${props => props.$valid ? 'rgb(0, 0, 149)' : 'rgb(0, 0, 149, 0.5)'};
     color: #F1F2F4;
     font-size: 18px;
     border-radius: 40px;
@@ -58,8 +58,10 @@ export const ContactSubmit = styled.button`
     @media (max-width: 525px) {
         margin: 10px auto 30px;
     }
-
-    :hover {
-        background: rgba(0, 0, 149, 0.7);
-    }
+`
+export const Thanks = styled.p`
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
 `
