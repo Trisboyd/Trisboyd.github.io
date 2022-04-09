@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.0e692a52.css",
-    "main.js": "/static/js/main.97a2b2d8.js",
+    "main.js": "/static/js/main.b3ac042e.js",
     "static/js/787.28a6522c.chunk.js": "/static/js/787.28a6522c.chunk.js",
     "static/media/piraeus.mp3": "/static/media/piraeus.3e0fdd0f2fc7a1c2a5f1.mp3",
     "static/media/clubEdit.jpg": "/static/media/clubEdit.fde9505bd5998982d625.jpg",
+    "static/media/crypto-main.png": "/static/media/crypto-main.352f3add77fab2ea035b.png",
     "static/media/NewCrobPlace.png": "/static/media/NewCrobPlace.3ffcc67200db1c5e6529.png",
     "static/media/EBGaramond-Regular.ttf": "/static/media/EBGaramond-Regular.3fb4dd2923a5b4136a34.ttf",
-    "static/media/crypto-main.png": "/static/media/crypto-main.ab0e74e6aa6d265ec9b8.png",
     "static/media/NewCrobuzonMap.png": "/static/media/NewCrobuzonMap.3abe35bc2cfd89ce929b.png",
     "static/media/crypto-graph.png": "/static/media/crypto-graph.14af58afff705f1eb9ce.png",
     "static/media/NewCrobRace.png": "/static/media/NewCrobRace.9817ba8d71a8e91f74c4.png",
@@ -29,11 +29,11 @@
     "index.html": "/index.html",
     "static/media/exit.svg": "/static/media/exit.fe4592dcf02ef4f3740aa3a957a7f0a7.svg",
     "main.0e692a52.css.map": "/static/css/main.0e692a52.css.map",
-    "main.97a2b2d8.js.map": "/static/js/main.97a2b2d8.js.map",
+    "main.b3ac042e.js.map": "/static/js/main.b3ac042e.js.map",
     "787.28a6522c.chunk.js.map": "/static/js/787.28a6522c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e692a52.css",
-    "static/js/main.97a2b2d8.js"
+    "static/js/main.b3ac042e.js"
   ]
 }
