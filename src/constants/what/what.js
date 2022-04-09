@@ -22,7 +22,7 @@ export const NewCrobData = {
         newCrobP,
         newCrobR
     ],
-    stack: 'React',
+    stack: 'React | BEM',
     site: 'https://trisboyd.github.io/new-crobuzon-app/',
     code: 'https://github.com/Trisboyd/new-crobuzon-app'
 };
@@ -35,7 +35,7 @@ export const NewsData = {
         newsSearch,
         newsSaved
     ],
-    stack: 'React | Styled-Components | Node.js',
+    stack: 'React | Styled-Components | Node.js | Netlify | Heroku',
     site: 'https://wonderful-yonath-9a8bb2.netlify.app/#/',
     code: 'https://github.com/Trisboyd/news-explorer-frontend'
 }
@@ -48,7 +48,7 @@ export const AroundData = {
         aroundLogin,
         aroundAdd
     ],
-    stack: 'React | Node.js',
+    stack: 'React | Node.js | Heroku',
     site: 'https://trisboyd.github.io/react-around-auth/#/signup',
     code: 'https://github.com/Trisboyd/react-around-auth'
 }

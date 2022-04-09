@@ -65,3 +65,6 @@ export const Thanks = styled.p`
     color: white;
     text-align: center;
 `
+export const Iframe = styled.iframe`
+    display: none;
+`

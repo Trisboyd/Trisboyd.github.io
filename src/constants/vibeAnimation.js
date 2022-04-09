@@ -19,6 +19,24 @@ export const glow1 = keyframes`
     9% {
         border: none;
     }
+    25% {
+        border: 4px solid white;
+    }
+    26% {
+        border: 3.5px solid white;
+    }
+    27% {
+        border: 3px solid gray;
+    }
+    28% {
+        border: 2px solid gray;
+    }
+    29% {
+        border: 1px solid gray;
+    }
+    30% {
+        border: none;
+    }
     50% {
         border: 4px solid white;
     }
@@ -57,6 +75,24 @@ export const glow2 = keyframes`
     25% {
         border: none;
     }
+    85% {
+        border: 4px solid white;
+    }
+    86% {
+        border: 3.5px solid white;
+    }
+    87% {
+        border: 3px solid gray;
+    }
+    88% {
+        border: 2px solid gray;
+    }
+    89% {
+        border: 1px solid gray;
+    }
+    90% {
+        border: none;
+    }
     60% {
         border: 4px solid white;
     }
@@ -77,6 +113,24 @@ export const glow2 = keyframes`
     }
 `
 export const glow3 = keyframes`
+11% {
+    border: 4px solid white;
+}
+12% {
+    border: 3.5px solid white;
+}
+13% {
+    border: 3px solid gray;
+}
+14% {
+    border: 2px solid gray;
+}
+15% {
+    border: 1px solid gray;
+}
+16% {
+    border: none;
+}
     30% {
         border: 4px solid white;
     }
@@ -133,6 +187,24 @@ export const glow4 = keyframes`
     45% {
         border: none;
     }
+    20% {
+        border: 4px solid white;
+    }
+    8% {
+        border: 3.5px solid white;
+    }
+    9% {
+        border: 3px solid gray;
+    }
+    10% {
+        border: 2px solid gray;
+    }
+    11% {
+        border: 1px solid gray;
+    }
+    12% {
+        border: none;
+    }
     80% {
         border: 4px solid white;
     }
@@ -169,6 +241,24 @@ export const glow5 = keyframes`
         border: 1px solid gray;
     }
     17% {
+        border: none;
+    }
+    20% {
+        border: 4px solid white;
+    }
+    43% {
+        border: 3.5px solid white;
+    }
+    44% {
+        border: 3px solid gray;
+    }
+    45% {
+        border: 2px solid gray;
+    }
+    46% {
+        border: 1px solid gray;
+    }
+    47% {
         border: none;
     }
     90% {

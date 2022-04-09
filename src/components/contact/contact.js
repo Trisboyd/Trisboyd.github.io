@@ -1,5 +1,14 @@
 import Input from "../input/input";
-import { ContactPic, ContactForm, ContactSection, ContactSubmit, ContactTitle, Thanks } from "./styledContact";
+import {
+    ContactPic,
+    ContactForm,
+    ContactSection,
+    ContactSubmit,
+    ContactTitle,
+    Thanks,
+    Iframe
+}
+    from "./styledContact";
 import pisa from '../../images/pisaPic.jpg';
 import { useState, useEffect, useRef } from 'react';
 
@@ -14,10 +23,6 @@ const Contact = () => {
 
     const checkFormValidity = () => {
         setValid(formRef.current.checkValidity())
-    }
-
-    const submitForm = () => {
-        setSubmitted(true);
     }
 
     const [inputs, setInputs] = useState({
@@ -54,21 +59,52 @@ const Contact = () => {
 
     const formMessage = 'entry.2057609694';
 
-    const formUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfupqKSW-7BCZcuiIXtQayi47-vl8UKgvQgVihOuHA6yAa1rA/formResponse';
+    const formURL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfupqKSW-7BCZcuiIXtQayi47-vl8UKgvQgVihOuHA6yAa1rA/formResponse';
 
+    const submitForm = (event) => {
+        const formData = {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                'entry.90517467': inputs.name,
+                'entry.1056814574': inputs.email,
+                'entry.2057609694': inputs.message
+            })
+        }
+        return fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfupqKSW-7BCZcuiIXtQayi47-vl8UKgvQgVihOuHA6yAa1rA/formResponse', formData)
+            .then(res => setSubmitted(true))
+    }
+
+    let submittedForm = false;
+    let hiddenFrameLoaded = false;
+
+    function handleHiddenFrameLoaded() {
+        if (hiddenFrameLoaded) {
+            submittedForm = true;
+        } else {
+            hiddenFrameLoaded = true;
+        }
+    }
 
     return (
         <ContactSection id='contact'>
             <ContactPic src={pisa} />
+            <Iframe
+                title='hidden_iframe'
+                name='hidden_iframe'
+                id='hidden_iframe'
+                onload={handleHiddenFrameLoaded} />
             {submitted ?
                 <Thanks>Thank you! Tristan will reach out to you shortly</Thanks>
                 :
                 <ContactForm
                     ref={formRef}
-                    action={formUrl}
+                    onChange={checkFormValidity}
+                    target='hidden_iframe'
+                    action={formURL}
                     method='POST'
                     onSubmit={submitForm}
-                    onChange={checkFormValidity}
                 >
                     <ContactTitle>Contact Me</ContactTitle>
                     <Input
