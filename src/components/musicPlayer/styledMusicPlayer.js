@@ -63,6 +63,10 @@ export const PlayButton = styled.button`
         width: 40px;
         height: 30px;
     }
+
+    @media (max-width: 400px) {
+        width: 50%;
+    }
 `
 export const PlaySym = styled.img`
     width: 100%;
