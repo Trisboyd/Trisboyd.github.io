@@ -78,6 +78,6 @@ export const AccData = {
         accCycle
     ],
     stack: 'React | Styled-Components | Framer-Motion',
-    site: 'https://github.com/rileydanejohnston/apiary-acc',
-    code: 'https://beautiful-meringue-f9bf10.netlify.app/'
+    site: 'https://beautiful-meringue-f9bf10.netlify.app/',
+    code: 'https://github.com/rileydanejohnston/apiary-acc'
 }
