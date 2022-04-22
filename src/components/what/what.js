@@ -2,7 +2,7 @@ import { WhatBlock, WhatGrid, WhatSection } from './styledWhat';
 import { SectionTitle } from '../who/styledWho';
 import WhatBlockHover from '../whatBlock/whatBlockHover';
 import Fade from 'react-reveal/Fade';
-import { NewsData, NewCrobData, AroundData, CryptoData } from '../../constants/what/what';
+import { NewsData, NewCrobData, AroundData, CryptoData, AccData } from '../../constants/what/what';
 
 const What = (props) => {
 
@@ -15,12 +15,19 @@ const What = (props) => {
             <SectionTitle>What?</SectionTitle>
             <Fade>
                 <WhatGrid>
-                    <WhatBlock />
                     <WhatBlock
                         pic={NewsData.images[0]}
                         $real='real'>
                         <WhatBlockHover
                             data={NewsData}
+                            handlePopupClick={handlePopupClick} />
+                    </WhatBlock>
+                    <WhatBlock />
+                    <WhatBlock
+                        pic={AccData.images[0]}
+                        $real='real'>
+                        <WhatBlockHover
+                            data={AccData}
                             handlePopupClick={handlePopupClick} />
                     </WhatBlock>
                     <WhatBlock />
@@ -31,7 +38,6 @@ const What = (props) => {
                             data={AroundData}
                             handlePopupClick={handlePopupClick} />
                     </WhatBlock>
-
                     <WhatBlock />
                     <WhatBlock
                         pic={CryptoData.images[0]}

@@ -9,7 +9,7 @@ export const WhatBlockInfo = styled.div`
     right: 0;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     visibility: hidden;
     opacity: 0;
@@ -23,6 +23,7 @@ export const WhatBlockInfo = styled.div`
 export const WhatTitle = styled.h4`
     font-size: 30px;
     text-align: center;
+    color: white;
     margin: 8% 0;
 
     @media (max-width: 769px) {
@@ -35,7 +36,7 @@ export const WhatTitle = styled.h4`
 `
 export const WhatStack = styled.p`
     font-size: 20px;
-    color: red;
+    color: yellow;
     text-align: center;
 
     @media (max-width: 769px) {
