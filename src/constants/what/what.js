@@ -13,6 +13,10 @@ import newsSaved from './newsSaved.png';
 import cryptoMain from './crypto-main.png';
 import cryptoGraph from './crypto-graph.png';
 
+import accHome from './accHome.png';
+import accProblem from './accProblem.png';
+import accCycle from './accCycle.png';
+
 
 export const NewCrobData = {
     title: 'Explore New Crobuzon',
@@ -63,4 +67,17 @@ export const CryptoData = {
     stack: 'React | Styled-Components',
     site: 'https://trisboyd.github.io/coin-mock/',
     code: 'https://github.com/Trisboyd/coin-mock'
+}
+
+export const AccData = {
+    title: "Awesome Container Company",
+    about: "Hung Lam aims to drastically reduce restaurant waste through the use of reusable containers. This website teaches about his company and connects new partners.",
+    images: [
+        accHome,
+        accProblem,
+        accCycle
+    ],
+    stack: 'React | Styled-Components | Framer-Motion',
+    site: 'https://github.com/rileydanejohnston/apiary-acc',
+    code: 'https://beautiful-meringue-f9bf10.netlify.app/'
 }
