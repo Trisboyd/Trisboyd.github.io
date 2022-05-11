@@ -26,7 +26,7 @@ export const NewCrobData = {
         newCrobP,
         newCrobR
     ],
-    stack: 'React | BEM',
+    stack: 'React | TypeScript | BEM',
     site: 'https://trisboyd.github.io/new-crobuzon-app/',
     code: 'https://github.com/Trisboyd/new-crobuzon-app'
 };

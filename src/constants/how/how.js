@@ -5,7 +5,7 @@ import node from './node.png';
 import react from './react.png';
 import python from './python.png';
 import css from './css.png';
-import redux from './redux.png';
+import typescript from './typescript.png';
 import solidity from './solidity.png';
 
 export const images = [
@@ -18,7 +18,7 @@ export const images = [
         image: css
     },
     {
-        name: 'Javascript',
+        name: 'JavaScript',
         image: javascript
     },
     {
@@ -38,8 +38,8 @@ export const images = [
         image: mysql
     },
     {
-        name: 'Redux',
-        image: redux
+        name: 'TypeScript',
+        image: typescript
     },
     {
         name: 'Solidity',
